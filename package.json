@@ -1,0 +1,15 @@
+{
+  "name": "dogsvscats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d site"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://devgel.github.io/dogsvscats",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

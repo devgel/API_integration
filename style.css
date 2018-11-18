@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    color: rgb(226, 226, 226);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    overflow-x: hidden;
+    
+    
+}
+
+.spinner{
+    width: 80px;
+    height: 80px;
+    
+    border: 20px solid #f3f3f3;
+    border-top:10px solid rgb(102, 212, 69);
+    border-radius: 100%;
+    
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+
+#overlay{
+  height:100%;
+  width:100%;
+  background:white;
+  position:fixed;
+  left:0;
+  top:0;
+ }
+
+.fa-smile-wink{
+    position: absolute;
+    padding: 5px;
+    margin: 10px 0 0 20px;
+    cursor: pointer;
+}
+
+i span{
+    font-family: 'Spicy Rice', cursive;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;  
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+nav ul{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+nav{
+    position: relative;
+    height: 100px;
+    border-bottom: 10px solid rgb(226, 226, 226)
+}
+
+nav ul li a{
+    color: inherit;
+}
+.fa-facebook-f:hover{
+    color: rgb(66, 120, 238);
+}
+
+.fa-github:hover{
+    color: rgb(36, 35, 35);
+}
+
+.fa-google-plus:hover{
+    color: rgb(192, 87, 87);
+}
+
+.fa-smile-wink{
+    color: rgb(102, 212, 69);
+}
+
+
+
+h1{
+    padding-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(102, 212, 69);
+    font-family: 'Unkempt', cursive;
+
+}
+
+.wrapper{
+    height: 640px;
+    width: 700px;
+    border: 10px solid rgb(226, 226, 226);
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+}
+
+.wrapper:hover{
+    border: 10px solid rgb(102, 212, 69);
+}
+
+.dog-btn {
+   height: 100px;
+   width: 70px;
+   background: rgb(226, 226, 226);
+   margin: 10px;
+   margin-top: -300px;
+   cursor: pointer;
+   
+}
+.dog-btn p{
+    color: rgb(102, 212, 69);
+    text-align: center;
+    padding-top: 25px; 
+    padding-bottom: 40px; 
+    font-weight: bolder;
+    
+}
+.dog-btn p:hover{
+    color: white;   
+}
+
+
+.dog-btn:hover {
+   background: rgb(102, 212, 69);
+}
+
+
+
+
+.cat-btn {
+    float: right;
+    height: 100px;
+    width: 70px;
+    background: rgb(226, 226, 226);
+    margin: 10px;
+    margin-top: -110px;
+    cursor: pointer;
+    
+}
+
+.image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+
+.cat-btn p{
+    color: rgb(102, 212, 69);
+    text-align: center;
+    padding-top: 25px; 
+    padding-bottom: 40px; 
+    font-weight: bolder;
+}
+
+.cat-btn p:hover{
+    color: white;   
+}
+.cat-btn:hover {
+   background: rgb(102, 212, 69);
+}
+
+.image-wrapper{
+    
+    height: 400px;
+    width: 450px;
+    margin: 50px auto;
+    margin-bottom: 0px;
+    transition: 1s ease all;
+    overflow: hidden;
+
+}
+
+.overflow{
+    height: 400px;
+    margin: 50px auto;
+    width: 450px;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.word-wrapper{
+    width: 450px;
+    height: 200px;
+    margin: auto;
+    margin-top: 5px;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+}
+.word{
+    text-align: center;
+    
+}
+
+.image-wrapper:hover{
+    transform: scale(1.1)
+}
+
+footer{
+    height: 50px;
+    color: rgb(102, 212, 69);;
+    border-top: 10px solid rgb(226, 226, 226);
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+/*tablets*/
+@media screen and (max-width: 800px){
+    .fa-smile-wink{
+        position: relative;
+        margin: 10px auto;
+    }
+        nav{
+            position: relative;
+            height: 200px;
+            border-bottom: 10px solid rgb(226, 226, 226);
+            padding-left: 0px     
+    }
+
+    
+    .image-wrapper, .overflow{
+    width: 350px;
+}
+.wrapper{
+   
+    width: 400px;
+    height: 800px;
+}
+.word-wrapper{
+    margin-top:100px;
+    width: 350px;
+    
+}
+.dog-btn{
+    margin-left: 25px;
+}
+.cat-btn{
+    margin-right: 25px;
+}
+
+}
+/*tablets*/
+@media screen and (max-width: 450px){
+    .fa-smile-wink{
+        position: relative;
+        margin: 10px auto;
+    }
+        nav{
+            position: relative;
+            height: 200px;
+            border-bottom: 10px solid rgb(226, 226, 226);
+            padding-left: 0px     
+    }
+
+    
+    .image-wrapper, .overflow{
+    width: 250px;
+}
+.wrapper{
+   
+    width: 300px;
+    height: 800px;
+}
+.word-wrapper{
+    margin-top:120px;
+    width: 250px;
+    
+}
+.dog-btn{
+    margin-left: 25px;
+}
+.cat-btn{
+    margin-right: 25px;
+}
+
+}
+
+
